@@ -1,0 +1,51 @@
+ATTACKMODE HID VID_046D PID_C31C MAN_XFR PROD_XFRBOARD SERIAL_13371337
+
+REM begin with all the F keys...
+F1
+F2
+F3
+F4
+F5
+F6
+F7
+F8
+F9
+F10
+F11
+F12
+
+REM now loop all possible command characters
+allChars = "abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()-_=+`~,<.>/?;:'"
+allChars += '"'
+allChars += "[{]}\|]"
+
+for (( i=0; i<${#allChars}; i++ )); do
+  nextUp = "${allChars:$i:1}"
+  Q CTRL ${nextUp}
+  Q CTRL ALT ${nextUp}
+  Q CTRL SHIFT ${nextUp}
+  Q CTRL ALT SHIFT ${nextUp}
+  Q GUI ${nextUp}
+  Q GUI CTRL ${nextUp}
+  Q GUI ALT ${nextUp}
+  Q GUI SHIFT ${nextUp}
+  Q GUI CTRL ALT ${nextUp}
+  Q GUI CTRL SHIFT ${nextUp}
+  Q GUI CTRL ALT SHIFT ${nextUp}
+done
+
+REM start everything else I can think of...
+CTRL ALT DELETE
+SHIFT TAB
+ALT TAB
+CTRL ALT TAB
+CTRL SHIFT TAB
+CTRL ALT ENTER
+MENU APP
+ALT P
+CTRL SHIFT N
+ALT ENTER
+ALT RIGHT
+ALT LEFT
+END
+HOME
