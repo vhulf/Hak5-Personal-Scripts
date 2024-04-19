@@ -1,0 +1,136 @@
+REM all the Windows key stuff! A does quick settings, B focuses taskbar, C opens _copilot_
+REM SHIFT C opens 'charms', CTRL C turns on color filters, D shows/hides desktop, E opens file explorer
+REM F opens the feedback hub and takes a screenshot, G opens the xbox gamebar, ALT B switches HDR
+REM H launches voice typing, I opens settings, J focuses windows tip when available, K opens cast from quick settings
+REM L locks the PC, M minimizes all windows, shift M restores minimized windows, N opens calendar notifs
+REM O locks device orientation, P chooses display mode, CTRL Q for quick assist, R runs run dialog, ALT R records video of game, S opens search
+REM shift S takes a screenshot, T cycles through taskbar apps, U opens accessibility settings, V opens clipboard history, shift V sets focus on a notif
+REM W opens widgets, X opens the quick link, Y switch to mixed reality?? (do twice.), Z opens SNAP layouts, . or ; opens EMOJIS
+REM , temporarily peeks desktop, PAUSE opens system about page, CTRL F searches for PCs, NUMBER opens taskbar position app at NUMBER
+REM SHIFT NUMBER open new instance of taskbar position app at NUMBER, CTRL NUMBER , ALT NUMBER, CTRL SHIFT NUMBER (more open app at position stuff... shift is as admin)
+REM TAB opens task view, UP arrow maxamizes, DOWN arrow minimizes, left & right do half panes, Home minimizes all but active, SHIFT LEFT OR RIGHT moves app to different desktop view
+REM PRTSCRN save fullscreen screenshot, ALT ENTER opens taskbar item if highlighted...
+
+ATTACKMODE HID VID_046D PID_C31C MAN_XFR PROD_XFRBOARD SERIAL_13371337
+
+REM begin with all the F keys...
+F1
+F2
+F3
+F4
+F5
+F6
+F7
+F8
+F9
+F10
+F11
+F12
+
+GUI a
+GUI b
+GUI c
+GUI SHIFT c
+GUI CONTROL c
+GUI d
+GUI e
+GUI f
+GUI g
+GUI ALT B
+GUI h
+GUI i
+GUI j
+GUI k
+GUI l
+GUI m
+GUI SHIFT m
+GUI n
+GUI o
+GUI p
+GUI CTRL q
+GUI r
+GUI ALT r
+GUI s
+GUI SHIFT s
+GUI t
+GUI u
+GUI v
+GUI SHIFT v
+GUI w
+GUI x
+REM do GUI y twice in case it puts us into another reality....
+GUI y
+GUI y
+GUI z
+GUI .
+GUI ;
+GUI ,
+GUI PAUSE
+GUI CTRL F
+GUI 0
+GUI 1
+GUI 2
+GUI 3
+GUI 4
+GUI 5
+GUI 6
+GUI 7
+GUI 8
+GUI 9
+GUI CTRL 0
+GUI CTRL 1
+GUI CTRL 2
+GUI CTRL 3
+GUI CTRL 4
+GUI CTRL 5
+GUI CTRL 6
+GUI CTRL 7
+GUI CTRL 8
+GUI CTRL 9
+GUI ALT 0
+GUI ALT 1
+GUI ALT 2
+GUI ALT 3
+GUI ALT 4
+GUI ALT 5
+GUI ALT 6
+GUI ALT 7
+GUI ALT 8
+GUI ALT 9
+GUI CTRL SHIFT 0
+GUI CTRL SHIFT 1
+GUI CTRL SHIFT 2
+GUI CTRL SHIFT 3
+GUI CTRL SHIFT 4
+GUI CTRL SHIFT 5
+GUI CTRL SHIFT 6
+GUI CTRL SHIFT 7
+GUI CTRL SHIFT 8
+GUI CTRL SHIFT 9
+GUI TAB
+GUI UP
+GUI DOWN
+GUI LEFT
+GUI RIGHT
+GUI HOME
+GUI SHIFT LEFT
+GUI SHIFT RIGHT
+GUI PRINTSCREEN
+GUI ALT ENTER
+GUI ESCAPE
+
+REM start everything else I can think of...
+CTRL ALT DELETE
+SHIFT TAB
+ALT TAB
+CTRL ALT TAB
+CTRL SHIFT TAB
+CTRL ALT ENTER
+MENU APP
+ALT P
+CTRL SHIFT N
+ALT ENTER
+ALT RIGHT
+ALT LEFT
+END
+HOME
