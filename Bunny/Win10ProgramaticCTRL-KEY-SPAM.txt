@@ -1,51 +1,54 @@
-ATTACKMODE HID VID_046D PID_C31C MAN_XFR PROD_XFRBOARD SERIAL_13371337
+LED M SOLID
+ATTACKMODE HID
+QUACK ID 05ac:021e Apple:Keyboard
+QUACK DELAY 2000
 
-REM begin with all the F keys...
-F1
-F2
-F3
-F4
-F5
-F6
-F7
-F8
-F9
-F10
-F11
-F12
+LED M SINGLE
+QUACK F1
+QUACK F2
+QUACK F3
+QUACK F4
+QUACK F5
+QUACK F6
+QUACK F7
+QUACK F8
+QUACK F9
+QUACK F10
+QUACK F11
+QUACK F12
 
-REM now loop all possible command characters
-allChars = "abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()-_=+`~,<.>/?;:'"
+allChars="abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()-_=+`~,<.>/?;:'"
 allChars += '"'
 allChars += "[{]}\|]"
 
 for (( i=0; i<${#allChars}; i++ )); do
-  nextUp = "${allChars:$i:1}"
-  Q CTRL ${nextUp}
-  Q CTRL ALT ${nextUp}
-  Q CTRL SHIFT ${nextUp}
-  Q CTRL ALT SHIFT ${nextUp}
-  Q GUI ${nextUp}
-  Q GUI CTRL ${nextUp}
-  Q GUI ALT ${nextUp}
-  Q GUI SHIFT ${nextUp}
-  Q GUI CTRL ALT ${nextUp}
-  Q GUI CTRL SHIFT ${nextUp}
-  Q GUI CTRL ALT SHIFT ${nextUp}
+  nextUp="${allChars:$i:1}"
+  QUACK CTRL "${nextUp}"
+  QUACK CTRL ALT "${nextUp}"
+  QUACK CTRL SHIFT "${nextUp}"
+  QUACK CTRL ALT SHIFT "${nextUp}"
+  QUACK GUI "${nextUp}"
+  QUACK GUI CTRL "${nextUp}"
+  QUACK GUI ALT "${nextUp}"
+  QUACK GUI SHIFT "${nextUp}"
+  QUACK GUI CTRL ALT "${nextUp}"
+  QUACK GUI CTRL SHIFT "${nextUp}"
+  QUACK GUI CTRL ALT SHIFT "${nextUp}"
 done
 
-REM start everything else I can think of...
-CTRL ALT DELETE
-SHIFT TAB
-ALT TAB
-CTRL ALT TAB
-CTRL SHIFT TAB
-CTRL ALT ENTER
-MENU APP
-ALT P
-CTRL SHIFT N
-ALT ENTER
-ALT RIGHT
-ALT LEFT
-END
-HOME
+QUACK CTRL ALT DELETE
+QUACK SHIFT TAB
+QUACK ALT TAB
+QUACK CTRL ALT TAB
+QUACK CTRL SHIFT TAB
+QUACK CTRL ALT ENTER
+QUACK MENU APP
+QUACK ALT P
+QUACK CTRL SHIFT N
+QUACK ALT ENTER
+QUACK ALT RIGHT
+QUACK ALT LEFT
+QUACK END
+QUACK HOME
+
+LED G SOLID

@@ -1,0 +1,15 @@
+LED M SOLID
+ATTACKMODE HID
+QUACK ID 05ac:021e Apple:Keyboard
+QUACK DELAY 2000
+
+allChars='abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()-_=+"`~,<.>/?;:'
+allChars += "'"
+allChars += '[{]}\|]'
+
+for (( i=0; i<${#allChars}; i++ )); do
+  nextUp="${allChars:$i:1}"
+  QUACK STRING "${nextUp}"
+done
+
+LED G SOLID
