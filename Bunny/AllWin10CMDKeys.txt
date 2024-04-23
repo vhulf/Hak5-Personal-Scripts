@@ -1,23 +1,9 @@
-REM all the Windows key stuff! A does quick settings, B focuses taskbar, C opens _copilot_
-REM SHIFT C opens 'charms', CTRL C turns on color filters, D shows/hides desktop, E opens file explorer
-REM F opens the feedback hub and takes a screenshot, G opens the xbox gamebar, ALT B switches HDR
-REM H launches voice typing, I opens settings, J focuses windows tip when available, K opens cast from quick settings
-REM L locks the PC, M minimizes all windows, shift M restores minimized windows, N opens calendar notifs
-REM O locks device orientation, P chooses display mode, CTRL Q for quick assist, R runs run dialog, ALT R records video of game, S opens search
-REM shift S takes a screenshot, T cycles through taskbar apps, U opens accessibility settings, V opens clipboard history, shift V sets focus on a notif
-REM W opens widgets, X opens the quick link, Y switch to mixed reality?? (do twice.), Z opens SNAP layouts, . or ; opens EMOJIS
-REM , temporarily peeks desktop, PAUSE opens system about page, CTRL F searches for PCs, NUMBER opens taskbar position app at NUMBER
-REM SHIFT NUMBER open new instance of taskbar position app at NUMBER, CTRL NUMBER , ALT NUMBER, CTRL SHIFT NUMBER (more open app at position stuff... shift is as admin)
-REM TAB opens task view, UP arrow maxamizes, DOWN arrow minimizes, left & right do half panes, Home minimizes all but active, SHIFT LEFT OR RIGHT moves app to different desktop view
-REM PRTSCRN save fullscreen screenshot, ALT ENTER opens taskbar item if highlighted...
-
 LED M SOLID
 ATTACKMODE HID
 QUACK ID 05ac:021e Apple:Keyboard
 QUACK DELAY 2000
 
 LED M SINGLE
-REM begin with all the F keys...
 QUACK F1
 QUACK F2
 QUACK F3
@@ -62,7 +48,6 @@ QUACK GUI v
 QUACK GUI SHIFT v
 QUACK GUI w
 QUACK GUI x
-REM do GUI y twice in case it puts us into another reality....
 QUACK GUI y
 QUACK GUI y
 QUACK GUI z
@@ -123,7 +108,6 @@ QUACK GUI PRINTSCREEN
 QUACK GUI ALT ENTER
 QUACK GUI ESCAPE
 
-REM start everything else I can think of...
 QUACK CTRL ALT DELETE
 QUACK CTRL p
 QUACK CTRL i
