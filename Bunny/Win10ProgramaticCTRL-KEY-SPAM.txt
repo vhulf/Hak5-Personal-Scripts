@@ -27,6 +27,8 @@ for (( i=0; i<${#allChars}; i++ )); do
   QUACK CTRL ALT "${nextUp}"
   QUACK CTRL SHIFT "${nextUp}"
   QUACK CTRL ALT SHIFT "${nextUp}"
+  QUACK ALT "${nextUp}"
+  QUACK ALT SHIFT "${nextUp}"
   QUACK GUI "${nextUp}"
   QUACK GUI CTRL "${nextUp}"
   QUACK GUI ALT "${nextUp}"
