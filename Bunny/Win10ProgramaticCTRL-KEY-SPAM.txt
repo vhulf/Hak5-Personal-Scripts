@@ -17,9 +17,9 @@ QUACK F10
 QUACK F11
 QUACK F12
 
-allChars="abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()-_=+`~,<.>/?;:'"
-allChars += '"'
-allChars += "[{]}\|]"
+allChars='abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()-_=+"`~,<.>/?;:'
+allChars+='"'
+allChars+="[{]}\|]"
 
 for (( i=0; i<${#allChars}; i++ )); do
   nextUp="${allChars:$i:1}"
@@ -37,20 +37,5 @@ for (( i=0; i<${#allChars}; i++ )); do
   QUACK GUI-CTRL-SHIFT "${nextUp}"
   QUACK GUI-CTRL-ALT-SHIFT "${nextUp}"
 done
-
-QUACK SHIFT TAB
-QUACK ALT TAB
-QUACK CTRL-ALT TAB
-QUACK CTRL-SHIFT TAB
-QUACK CTRL-ALT ENTER
-QUACK MENU APP
-QUACK ALT P
-QUACK CTRL-SHIFT N
-QUACK ALT ENTER
-QUACK ALT RIGHT
-QUACK ALT LEFT
-QUACK END
-QUACK HOME
-QUACK CTRL-ALT DEL
 
 LED G SOLID
